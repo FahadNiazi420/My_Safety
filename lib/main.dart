@@ -9,20 +9,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    @override
-    Widget build(BuildContext context) {
-      int Day = 20;
-      return MaterialApp(
-        home: Material(
-          child: Center(
-            child: Container(
-              child: Text("Welcome to $Day of programming."),
-            ),
+    String userName = "Fahad"; 
+    int times = 10 ;// Replace "Fahad" with the user's name
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome, $userName!'),
+        ),
+        body: Center(
+          child: Container(
+            child: Text("Hello, $userName! $times times"),
           ),
-          )
-      );
-    }
-
-    return const Placeholder();
+        ),
+      ),
+    );
   }
 }
